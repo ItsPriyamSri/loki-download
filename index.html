@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Loki</title>
+<meta name="description" content="Loki: private, on-device AI chat for Android. A Lucknow AI Labs project.">
+<link rel="icon" href="assets/loki-logo.png">
+<style>
+  :root {
+    --bg: #27262b;
+    --line: #44434d;
+    --text: #e6e1e8;
+    --muted: #959396;
+    --link: #2c84fa;
+    --btn: #2448c9;
+    --btn-hover: #1f3fae;
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  a { color: var(--link); }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid var(--line);
+  }
+  header .brand { font-size: 1.5rem; color: var(--text); text-decoration: none; }
+  header nav a { font-size: .8rem; text-decoration: none; }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 48px 16px;
+  }
+  .logo { width: 144px; height: 144px; border-radius: 32px; }
+  h1 { font-size: 3rem; font-weight: 400; margin: 28px 0 8px; }
+  .tagline { font-size: 1.4rem; font-weight: 300; margin: 0 0 32px; max-width: 32ch; }
+  .download {
+    display: inline-block;
+    background: var(--btn);
+    color: #fff;
+    font-size: 1.15rem;
+    padding: .6em 1.4em;
+    border-radius: 4px;
+    text-decoration: none;
+    box-shadow: 0 1px 3px rgba(0,0,0,.25);
+  }
+  .download:hover { background: var(--btn-hover); }
+  .download:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; }
+  .meta { color: var(--muted); font-size: .85rem; margin-top: 16px; }
+  footer {
+    border-top: 1px solid var(--line);
+    padding: 20px 24px;
+    font-size: .8rem;
+    color: var(--muted);
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="https://lucknowai.org">Lucknow AI</a>
+  <nav><a href="https://github.com/LucknowAI/loki_llm">Loki on GitHub</a></nav>
+</header>
+<main>
+  <img class="logo" src="assets/loki-logo.png" alt="Loki logo">
+  <h1>Loki</h1>
+  <p class="tagline">Private AI chat that runs entirely on your phone.</p>
+  <a class="download" href="https://github.com/ItsPriyamSri/loki-download/releases/latest/download/loki.apk">Download for Android</a>
+  <p class="meta">Latest release · APK · Android 7.0+</p>
+</main>
+<footer>A project of <a href="https://lucknowai.org">Lucknow AI Labs</a> · Open source AI research &amp; mentorship</footer>
+</body>
+</html>
